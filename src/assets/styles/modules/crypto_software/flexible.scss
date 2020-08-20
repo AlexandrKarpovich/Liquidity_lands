@@ -1,0 +1,88 @@
+.flexible {
+  &__section.small__title {
+    .section__subtitle {
+      font-size: 18px;
+      line-height: 130%;
+    }
+  }
+
+  &__video {
+    margin: 0 auto;
+    margin-top: 80px;
+    display: block;
+    width: 98%;
+    max-width: 1000px;
+    filter: drop-shadow(27.6923px 23.0769px 80.7692px rgba(0, 0, 0, 0.35));
+    border-radius: 15px;
+  }
+
+  &__catalog {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 105px;
+
+    @include respond-to("tablet-wide") {
+      display: block;
+    }
+  }
+
+  &__item {
+    width: calc(33.333% - 80px * 2 / 3);
+
+    @include respond-to("tablet-wide") {
+      width: 100%;
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__title {
+    font-weight: $extrabold;
+    font-size: 26px;
+    line-height: $crypto_services-line;
+    text-align: center;
+    color: $darkgray;
+    margin-bottom: 18px;
+  }
+
+  &__desc {
+    font-weight: $light;
+    font-size: $base-font-size;
+    line-height: 140%;
+    /* or 22px */
+    text-align: center;
+    color: $darkgray;
+
+    @include respond-to("tablet-wide") {
+      span.db {
+        display: none;
+      }
+    }
+  }
+}
+
+.small__title {
+  .section__title {
+    font-size: $small-title;
+    line-height: $small-title-line;
+    text-align: center;
+    color: $darkgray;
+
+    @include respond-to("tablet") {
+      font-size: $big-font-mobile;
+      line-height: 45px;
+    }
+  }
+
+  .section__subtitle {
+    text-align: center;
+    color: $darkgray;
+    font-weight: normal;
+    font-size: $subtitle-font;
+    line-height: 130%;
+  }
+}

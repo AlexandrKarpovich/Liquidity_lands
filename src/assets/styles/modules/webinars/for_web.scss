@@ -1,0 +1,24 @@
+.for_web__section {
+  background: #f6f6f6;
+
+  .liq__catalog {
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  .liq__item {
+    width: calc(33.333% - 28px * 2 / 3);
+    padding: 44px 24px;
+    margin-bottom: 0;
+
+    @include respond-to("tablet-wide") {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .liq__title {
+      font-size: 22px;
+      margin: 20px 0;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.after__web {
+  &__section {
+    background: center / cover url(../images/after_web.png) no-repeat;
+    padding: 170px 0;
+
+    .section__title {
+      color: $white;
+    }
+  }
+
+  font-weight: $normal;
+  font-size: 22px;
+  line-height: 130%;
+  text-align: center;
+  color: $white;
+
+  @include respond-to("phablet") {
+    span.db {
+      display: none;
+    }
+  }
+
+  &__big {
+    font-weight: $bold;
+    font-size: 32px;
+  }
+
+  &__icon {
+    display: block;
+    margin: 40px auto 0;
+  }
+}

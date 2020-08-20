@@ -1,0 +1,127 @@
+.web_topics {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @include respond-to("tablet") {
+    display: block;
+  }
+
+  &__section {
+    background: $bluebg2;
+
+    .web_topics__title {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__title {
+    font-weight: $light;
+    font-size: $new_main_screen-size;
+    line-height: $new_main_screen-line;
+    /* identical to box height */
+    color: #373737;
+
+    @include respond-to("tablet") {
+      font-size: 40px;
+    }
+  }
+
+  &__subtitle {
+    font-weight: $normal;
+    font-size: $small-font;
+    line-height: 150%;
+    /* or 21px */
+    color: $darkgray;
+  }
+
+  &__text {
+    max-width: 397px;
+    width: 50%;
+
+    @include respond-to("tablet") {
+      max-width: none;
+      width: 100%;
+    }
+  }
+
+  &__items {
+    max-width: 510px;
+    width: 50%;
+
+    @include respond-to("tablet") {
+      max-width: none;
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+
+  &__item {
+    font-weight: $medium;
+    font-size: $tk-heading-size;
+    line-height: 130%;
+    /* or 27px */
+    color: #525252;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 11px;
+
+    @include respond-to("tablet") {
+      font-size: $and-size;
+
+      span.db {
+        display: none;
+      }
+    }
+
+    & + .web_topics__item {
+      margin-top: 32px;
+
+      @include respond-to("tablet") {
+        margin-top: 10px;
+      }
+    }
+
+    img {
+      display: block;
+      margin-right: 26px;
+      flex-shrink: 0;
+      margin-top: 4px;
+
+      @include respond-to("tablet") {
+        margin-top: 0;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &__join {
+    font-weight: $medium;
+    font-size: $base-font-size;
+    line-height: $tk-desc-line;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #a8a8a8;
+    margin-top: 60px;
+    text-decoration: none;
+
+    svg {
+      display: block;
+      margin-left: 10px;
+    }
+
+    &:hover {
+      font-weight: $bold;
+      color: #28a7b0;
+
+      svg {
+        path {
+          stroke: #28a7b0;
+        }
+      }
+    }
+  }
+}

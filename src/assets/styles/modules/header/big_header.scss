@@ -1,0 +1,291 @@
+.youtube {
+  transition: all 0.5s;
+  svg {
+    circle {
+      fill: #454545;
+    }
+    path {
+      &:nth-child(2) {
+        fill: white;
+      }
+      &:nth-child(3) {
+        fill: #454545;
+      }
+    }
+  }
+  &:hover {
+    svg {
+      circle {
+        fill: white;
+      }
+      path {
+        &:nth-child(2) {
+          fill: #ff0000;
+        }
+        &:nth-child(3) {
+          fill: white;
+        }
+      }
+    }
+  }
+}
+.linkedin {
+  transition: all 0.5s;
+  svg {
+    circle {
+      fill: #454545;
+    }
+    path {
+      &:nth-child(2) {
+        fill: white;
+      }
+      &:nth-child(3) {
+        fill: #454545;
+      }
+    }
+  }
+  &:hover {
+    svg {
+      circle {
+        fill: #006699;
+      }
+      path {
+        fill: white;
+      }
+    }
+  }
+}
+.twitter {
+  transition: all 0.5s;
+  svg {
+    path {
+      &:nth-child(1) {
+        fill: #454545;
+      }
+      &:nth-child(2) {
+        fill: white;
+      }
+    }
+  }
+  &:hover {
+    svg {
+      path {
+        &:nth-child(1) {
+          fill: white;
+        }
+        &:nth-child(2) {
+          fill: #1da1f2;
+        }
+      }
+    }
+  }
+}
+.telegram {
+  transition: all 0.5s;
+  svg {
+    circle {
+      fill: #454545;
+    }
+    path {
+      fill: white;
+    }
+  }
+  &:hover {
+    svg {
+      circle {
+        fill: #2ba4e0;
+      }
+      path {
+        fill: white;
+      }
+    }
+  }
+}
+
+.wechat {
+  transition: all 0.5s;
+  svg {
+    circle {
+      fill: #454545;
+    }
+    path {
+      fill: white;
+    }
+  }
+  &:hover {
+    svg {
+      circle {
+        fill: #00d863;
+      }
+      path {
+        fill: white;
+      }
+    }
+  }
+}
+
+.facebook {
+  transition: all 0.5s;
+  svg {
+    path {
+      &:nth-child(1) {
+        fill: #454545;
+      }
+      &:nth-child(2) {
+        fill: white;
+      }
+    }
+  }
+  &:hover {
+    svg {
+      path {
+        &:nth-child(1) {
+          fill: #3a589e;
+        }
+        &:nth-child(2) {
+          fill: white;
+        }
+      }
+    }
+  }
+}
+
+.tiktok {
+  transition: all 0.5s;
+  svg {
+    circle {
+      fill: #454545;
+    }
+    path {
+      fill: white;
+    }
+  }
+  &:hover {
+    svg {
+      circle {
+        fill: white;
+      }
+      path {
+        fill: #1c1c1c;
+      }
+    }
+  }
+}
+
+.instagram:not(:hover) {
+  transition: all 0.5s;
+  svg {
+    circle {
+      fill: #454545;
+    }
+    path {
+      fill: white;
+    }
+  }
+}
+
+.weibo:not(:hover) {
+  transition: all 0.5s;
+  svg {
+    circle {
+      fill: #454545;
+    }
+    path {
+      fill: white;
+    }
+  }
+}
+
+.youku:not(:hover) {
+  transition: all 0.5s;
+  svg {
+    circle {
+      fill: #454545;
+    }
+    path {
+      fill: white;
+    }
+  }
+}
+
+.small_header {
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 35px;
+  z-index: 99;
+
+  &_web {
+    .small_header__item .new_green_bord_btn {
+      min-width: 197px;
+    }
+  }
+
+  .big_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond-to("tablet") {
+      display: block;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    @include respond-to("phone-wide") {
+      display: block;
+    }
+  }
+
+  &__item {
+    margin-left: 66px;
+
+    @include respond-to("tablet") {
+      margin: 20px auto 0;
+    }
+
+    a:not(.new_green_bord_btn) {
+      color: $white;
+      text-decoration: none;
+      font-weight: $medium;
+      font-size: $base-font-size;
+      line-height: $tk-desc-line;
+      text-align: center;
+
+      &:hover {
+        background: linear-gradient(#319bc2 0%, #21aea2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+    .new_green_bord_btn {
+      text-decoration: none;
+      font-size: $base-font-size;
+      line-height: $tk-desc-line;
+      font-weight: $medium;
+      background: transparent;
+      color: $white;
+      border: 2px solid #4c6074;
+      box-sizing: border-box;
+      border-radius: 5px;
+      min-height: 48px;
+      min-width: 151px;
+      width: 98%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        background: linear-gradient(90deg, #3daad2 0%, #31d0c3 100%),
+          linear-gradient(270deg, #82909f -4.16%, #9fa9b5 100.04%);
+        border: none;
+      }
+    }
+  }
+}

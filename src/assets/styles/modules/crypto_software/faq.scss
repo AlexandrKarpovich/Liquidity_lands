@@ -1,0 +1,23 @@
+.soft__faq {
+  background: $bluebg2;
+
+  .question-item {
+    background: $bluebg2;
+
+    border-bottom: 2px solid $dert;
+
+    .question__plus span {
+      background-color: $dert;
+    }
+
+    &.active {
+      background: $bluebg2;
+
+      border: 2px solid $dert;
+    }
+  }
+
+  .section__title {
+    font-size: 60px;
+  }
+}

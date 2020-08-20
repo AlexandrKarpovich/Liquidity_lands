@@ -1,0 +1,24 @@
+.about_web {
+  &__section {
+  }
+
+  &__title {
+    font-weight: $bold;
+    font-size: 22px;
+    line-height: 43px;
+    /* identical to box height, or 198% */
+    color: $darkgray;
+    margin: 10px 0;
+  }
+
+  &__desc {
+    font-weight: $light;
+    font-size: 22px;
+    line-height: 164%;
+    color: $darkgray;
+
+    & + .about_web__desc {
+      margin-top: 20px;
+    }
+  }
+}

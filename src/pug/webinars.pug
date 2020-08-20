@@ -1,0 +1,15 @@
+extends template/main
+
+block variables
+	- var title = 'Brokerage Business'
+	- var pageClass = 'webinars small_header_page small_footer_page'
+	- var smallPageWeb = true
+
+block content
+	include modules/webinars/main_screen
+	include modules/webinars/topics
+	include modules/webinars/host
+	include modules/webinars/for_web
+	include modules/webinars/about_web
+	include modules/webinars/after_web
+	include modules/webinars/extra_form

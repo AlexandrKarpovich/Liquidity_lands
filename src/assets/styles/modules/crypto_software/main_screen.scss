@@ -1,0 +1,280 @@
+.new_main_screen {
+  overflow: hidden;
+  padding: 204px 0 150px;
+  background: conic-gradient(
+      from 181.89deg at 72.61% 39.86%,
+      #181a1c -39.7deg,
+      #10161d 67.5deg,
+      #29333d 112.1deg,
+      #395069 170.98deg,
+      #181a1c 320.3deg,
+      #10161d 427.5deg
+    ),
+    #1f2832;
+
+  @include respond-to("phone-wide") {
+    padding-top: 300px;
+  }
+
+  .section__title {
+    font-weight: $light;
+    font-size: $new_main_screen-size;
+    line-height: $new_main_screen-line;
+    color: $white;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .section__subtitle {
+    color: $white;
+    text-align: left;
+    margin-bottom: 34px;
+  }
+
+  .buty__form__wrapper {
+    max-width: 392px;
+    width: 98%;
+    z-index: 1;
+    position: relative;
+  }
+
+  .big_container {
+    position: relative;
+    box-sizing: border-box;
+
+    &:nth-child(1) {
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        background: center / 100% auto url(../images/crypto_soft_main.png)
+          no-repeat;
+        width: 69.9vw;
+        max-width: 1045px;
+        height: 100%;
+        right: -300px;
+        top: -30px;
+        z-index: 0;
+
+        @include respond-to("desktop-wide") {
+          right: -150px;
+          top: 0;
+          max-width: none;
+          width: 100%;
+        }
+
+        @include respond-to("tablet") {
+          right: 0;
+          opacity: 0.3;
+        }
+      }
+    }
+  }
+}
+
+.buty {
+  &__form {
+  }
+
+  &__label {
+    position: relative;
+    display: block;
+
+    & + .buty__label {
+      margin-top: 20px;
+    }
+
+    &.active {
+      .buty__placeholder {
+        top: 0;
+        color: #0abe98;
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+  }
+
+  &__input {
+    background: transparent;
+    height: 44px;
+    width: 100%;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #57687b;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-weight: $normal;
+    font-size: $base-font-size;
+    line-height: $tk-desc-line;
+    /* identical to box height */
+    color: $white;
+    padding-top: 10px;
+  }
+
+  &__placeholder {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 15px;
+    transition: 0.5s;
+    font-weight: $light;
+    font-size: $base-font-size;
+    line-height: $tk-desc-line;
+    /* identical to box height */
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &__label__phone {
+    img {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 14px;
+      width: 30px;
+    }
+
+    select {
+      position: absolute;
+      top: 14px;
+      left: 28px;
+      display: block;
+      width: 35px;
+      height: 19px;
+      font-weight: $normal;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 2.2px;
+      color: rgba(255, 255, 255, 0.6);
+      text-align-last: center;
+      background: transparent right center / auto url(../images/trangle.svg)
+        no-repeat;
+      appearance: none;
+      border: none;
+    }
+
+    input {
+      padding-left: 70px;
+      padding-top: 0;
+    }
+  }
+
+  &__label__pich {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    img {
+      display: block;
+      width: 131px;
+      margin-right: 11px;
+      flex-shrink: 0;
+    }
+
+    .buty__placeholder {
+      left: 142px;
+    }
+  }
+
+  &__btn {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 59px;
+    transition: all 0.5s;
+    font-weight: $medium;
+    font-size: $base-font-size;
+    line-height: $tk-desc-line;
+    /* identical to box height */
+    color: $white;
+    background: linear-gradient(90deg, #3dadd7 0%, #16bbad 100%),
+      linear-gradient(270deg, #82909f -4.16%, #9fa9b5 100.04%);
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-bottom: 24px;
+    cursor: pointer;
+
+    &:hover {
+      background: linear-gradient(90deg, #2b8eb3 0%, #1b9e93 100%),
+        linear-gradient(270deg, #82909f -4.16%, #9fa9b5 100.04%);
+    }
+  }
+
+  &__police,
+  &__police a {
+    font-weight: $light;
+    font-size: 11px;
+    line-height: 15px;
+    /* or 136% */
+    color: #57687b;
+  }
+}
+
+.crypto_services {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 152px;
+
+  @include respond-to("tablet-wide") {
+    display: block;
+    margin-top: 80px;
+  }
+
+  &__item {
+    width: calc(25% - 33px * 3 / 4);
+    padding: 30px 21px;
+    box-sizing: border-box;
+    background: rgba(31, 37, 44, 0.6);
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+
+    @include respond-to("tablet-wide") {
+      width: 100%;
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__title {
+    font-weight: $bold;
+    font-size: $crypto_services-size;
+    line-height: $crypto_services-line;
+    /* identical to box height */
+    color: $white;
+    margin-bottom: 18px;
+    position: relative;
+    box-sizing: border-box;
+    padding-right: 20px;
+
+    span.db {
+      display: none;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 10px;
+      display: block;
+      width: 10px;
+      height: 10px;
+      background: #0abe98;
+      border-radius: 10px;
+    }
+  }
+
+  &__desc {
+    font-weight: $light;
+    font-size: $base-font-size;
+    line-height: $what_tk__desc-line;
+    /* or 22px */
+    color: $white;
+  }
+}

@@ -1,0 +1,77 @@
+// Colors
+$white: #ffffff;
+$gray: #63636e;
+$darkgray: #383838;
+$black: #000;
+$text-black: #555;
+$main: #4cae89;
+$pink: #e45d97;
+$background_black: #181c27;
+$grey: #f7f7f7;
+$bluebg: #eff4f6;
+$bluebg2: #f5f5f5;
+$darkbg: #1f2832;
+$grayblue: #6e8198;
+$grayblue-text: #637786;
+$head-white: #e3e3e3;
+$opacity-gray: #8e8c8b;
+$what_tk__desc: #82898f;
+$tk-head: #3f3f3f;
+$tk-bg: #747474;
+$dert: #c4c4c4;
+
+// Sizes
+$title-font: 80px;
+$title-lineheight: 84px;
+$subtitle-font: 24px;
+$subtitle-lineheight: 35px;
+$small-font: 14px;
+$font-18: 18px;
+$base-font-size: 16px;
+$huge-font-size: 36px;
+$normal-indent: 20px;
+$big-font: 72px;
+$big-font-mobile: 40px;
+$and-size: 13px;
+$tk-heading-size: 21px;
+$feat_tk__text_block__title: 20px;
+$new_main_screen-size: 50px;
+$crypto_services-size: 26px;
+$small-title: 60px;
+
+// line
+$what_tk__subtitle: 23px;
+$what_tk__desc-line: 22px;
+$tk-heading-line: 30px;
+$tk-desc-line: 19px;
+$crypto-head-table-size: 50px;
+$new_main_screen-line: 59px;
+$crypto_services-line: 30px;
+$small-title-line: 70px;
+
+// wight
+$medium: 500;
+$bold: 600;
+$extrabold: 900;
+$normal: 400;
+$light: 300;
+
+$breakpoints: (
+  "phone": 320px,
+  "phone-wide": 480px,
+  "phablet": 560px,
+  "tablet-small": 640px,
+  "tablet": 768px,
+  "tablet-middle": 900px,
+  "tablet-wide": 1000px,
+  "desktop": 1248px,
+  "desktop-wide": 1440px,
+  "desktop-big": 1800px,
+  "desktop-huge": 2000px,
+  "desktop-max": 2900px,
+);
+
+$content-size: 1200px;
+$content-max-size: 1500px;
+$wrapper-size: 1920px;
+// Fonts

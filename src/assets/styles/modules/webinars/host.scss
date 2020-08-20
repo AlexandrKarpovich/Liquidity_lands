@@ -1,0 +1,120 @@
+.host {
+  margin-top: 56px;
+
+  &__section {
+    .web_topics__title {
+      max-width: 512px;
+      margin-left: auto;
+      line-height: 84px;
+      margin-bottom: 40px;
+      padding-top: 66px;
+      text-align: center;
+
+      @include respond-to("tablet-wide") {
+        text-align: right;
+      }
+
+      @include respond-to("phone-wide") {
+        text-align: center;
+      }
+    }
+
+    .big_container {
+      position: relative;
+    }
+  }
+
+  li {
+    margin-left: 11px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-weight: $normal;
+    font-size: $small-font;
+    line-height: 150%;
+    color: $darkgray;
+
+    @include respond-to("tablet-wide") {
+      span.db {
+        display: none;
+      }
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: $darkgray;
+      margin-right: 25px;
+      margin-top: 7px;
+      flex-shrink: 0;
+    }
+
+    & + li {
+      margin-top: 20px;
+    }
+  }
+
+  &__block {
+    background: $bluebg2;
+    padding: 105px 69px 87px 73px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: 9px;
+
+    @include respond-to("tablet-wide") {
+      padding: 20px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      width: 560px;
+      height: 560px;
+      background: center / cover url(../images/host.png) no-repeat;
+      z-index: -1;
+
+      @include respond-to("tablet-wide") {
+        width: 200px;
+        height: 200px;
+      }
+
+      @include respond-to("phone-wide") {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+
+  &__title {
+    font-weight: $medium;
+    font-size: 36px;
+    line-height: 130%;
+    /* identical to box height, or 47px */
+    color: $darkgray;
+    margin-bottom: 8px;
+  }
+
+  &__subtitle {
+    font-weight: $normal;
+    font-size: $small-font;
+    line-height: 130%;
+    color: $darkgray;
+    margin-bottom: 7px;
+  }
+
+  &__desc {
+    font-weight: $light;
+    font-size: 13px;
+    line-height: 130%;
+    /* or 17px */
+    color: rgba(56, 56, 56, 0.6);
+  }
+}

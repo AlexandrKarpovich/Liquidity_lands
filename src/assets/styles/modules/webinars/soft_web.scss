@@ -1,0 +1,22 @@
+.soft_webinars {
+  &__section {
+    .section__title {
+      font-size: 50px;
+      line-height: 140%;
+      margin-bottom: 0 !important;
+    }
+  }
+
+  &__time {
+    font-weight: $light;
+    font-size: $feat_tk__text_block__title;
+    line-height: 140%;
+    /* or 28px */
+    color: $darkgray;
+    margin-bottom: 30px;
+
+    @include respond-to("tablet-wide") {
+      text-align: center;
+    }
+  }
+}

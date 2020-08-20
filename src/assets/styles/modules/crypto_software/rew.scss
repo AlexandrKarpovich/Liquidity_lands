@@ -1,0 +1,66 @@
+.soft_rew {
+  &__block {
+    max-width: 900px;
+    width: 98%;
+    margin: 0 auto;
+  }
+
+  &__text {
+    margin: 10px auto 14px;
+
+    span {
+      display: block;
+      padding: 35px 0;
+      font-weight: $light;
+      font-size: 22px;
+      line-height: 43px;
+      /* or 198% */
+      align-items: center;
+      color: $darkgray;
+    }
+
+    svg {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__artist {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    svg {
+      display: block;
+      margin-left: auto;
+    }
+  }
+
+  &__icon {
+    flex-shrink: 0;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    margin-left: 20px;
+    background: #ababab;
+    object-fit: cover;
+  }
+
+  &__title {
+    font-weight: $bold;
+    font-size: $base-font-size;
+    line-height: 26px;
+    text-align: right;
+    color: $darkgray;
+    margin-top: 8px;
+  }
+
+  &__subtitle {
+    font-weight: $normal;
+    font-size: $small-font;
+    line-height: 161.19%;
+    /* or 23px */
+    text-align: right;
+    color: $darkgray;
+  }
+}
