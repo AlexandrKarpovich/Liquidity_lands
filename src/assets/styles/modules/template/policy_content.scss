@@ -1,0 +1,108 @@
+.policy {
+  max-width: 789px;
+  width: 98%;
+  margin: 0 auto;
+
+  &__section.policy__section {
+    padding-top: 200px;
+
+    .section__title {
+      margin-bottom: 100px;
+    }
+  }
+
+  &__item + .policy__item {
+    margin-top: 70px;
+  }
+
+  &__title {
+    font-weight: $extrabold;
+    font-size: $menu-size;
+    line-height: $turn-line;
+    /* identical to box height, or 119% */
+    color: $black-text;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    font-weight: $medium;
+    font-size: $big-text-size;
+    line-height: $policy-subtitle-line;
+    /* identical to box height, or 156% */
+    color: $policy-subtitle;
+    margin-bottom: 20px;
+  }
+
+  &__desc {
+    font-weight: $normal;
+    font-size: $little-text-size;
+    line-height: $policy-text-line;
+    /* or 143% */
+    color: $policy-text;
+
+    & + .policy__desc {
+      margin-top: 25px;
+    }
+  }
+
+  &__link {
+    font-weight: $normal;
+    font-size: $little-text-size;
+    line-height: $policy-text-line;
+    /* identical to box height, or 143% */
+    text-decoration-line: underline;
+    color: #01bd95;
+  }
+
+  .policy__desc + .policy__subtitle {
+    margin-top: 20px;
+  }
+
+  &__section {
+    padding-top: 80px;
+
+    .page__title {
+      color: $black-text;
+      margin: 120px auto 100px;
+      text-align: center;
+    }
+  }
+
+  &__ul {
+    margin: 20px 0;
+    &__item {
+      font-style: normal;
+      font-weight: $normal;
+      font-size: $little-text-size;
+      line-height: $policy-text-line;
+      /* or 143% */
+      color: $policy-text;
+      padding-left: 23px;
+      position: relative;
+
+      & + .policy__ul__item {
+        margin-top: 15px;
+      }
+
+      &:before {
+        content: "";
+        display: block;
+        width: 4px;
+        height: 4px;
+        background: #01bd95;
+        position: absolute;
+        left: 5px;
+        top: 6px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.small_header_page.policy_page {
+  .small_header {
+    .small_header__item a:not(:hover) {
+      color: $poli;
+    }
+  }
+}
