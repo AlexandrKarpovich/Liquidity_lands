@@ -12,20 +12,35 @@ $(document).ready(function () {
     );
   });
 
+  $(document).on("click", ".ahor_btn--js", function (e) {
+    e.preventDefault();
+    let link = $(this).attr("href");
+
+    $("html, body").animate(
+      {
+        scrollTop: $(link).offset().top,
+      },
+      700
+    );
+  });
+  var emailReg = /@/;
+  var nameReg = /[A-Za-zА-Яа-яЁё]/;
+
   $(document).on("focus", ".buty__label input", function () {
     $(this).parent().addClass("active");
     $(this).parent().removeClass("error");
   });
   $(document).on("blur", ".buty__label input", function () {
-    if ($(this).val() == "") {
+    if ($(this).val() == "" || $(this).val() == "(___) ___-__-__") {
       $(this).parent().removeClass("active");
       $(this).parent().addClass("error");
     } else {
       $(this).parent().removeClass("error");
-      if (
-        $(this).attr("type") == "email" &&
-        !isValidEmailAddress($(this).val())
-      ) {
+      if ($(this).attr("type") == "email" && !$(this).val().match(emailReg)) {
+        $(this).parent().addClass("error");
+      }
+
+      if ($(this).attr("name") == "name" && !$(this).val().match(nameReg)) {
         $(this).parent().addClass("error");
       }
     }
@@ -36,6 +51,16 @@ $(document).ready(function () {
 
     $.fancybox.open({
       src: "#modal_web_form",
+      type: "inline",
+      autoFocus: false,
+    });
+  });
+
+  $(document).on("click", ".web_form_btn2--js", function (e) {
+    e.preventDefault();
+
+    $.fancybox.open({
+      src: "#modal_web_form2",
       type: "inline",
       autoFocus: false,
     });

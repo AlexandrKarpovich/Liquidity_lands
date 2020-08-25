@@ -54,10 +54,10 @@
       <header class="small_header small_header_web">
         <div class="big_container"><img class="small_header__logo" src="images/small_logo.svg" alt="logo">
           <ul class="small_header__menu">
-            <li class="small_header__item"><a href="#">Agenda</a></li>
-            <li class="small_header__item"><a href="#">Speaker</a></li>
-            <li class="small_header__item"><a href="#"> About our webinars</a></li>
-            <li class="small_header__item"><a class="new_green_bord_btn" href="#">Request a callback </a></li>
+            <li class="small_header__item"><a class="ahor_btn--js" href=".web_topics__section">Agenda</a></li>
+            <li class="small_header__item"><a class="ahor_btn--js" href=".host__section">Speaker</a></li>
+            <li class="small_header__item"><a class="ahor_btn--js" href=".about_web__section"> About our webinars</a></li>
+            <li class="small_header__item"><a class="new_green_bord_btn web_form_btn2--js" href="#">Request a callback </a></li>
           </ul>
         </div>
       </header>
@@ -88,7 +88,7 @@
                 </div>
                 <div class="web_screen__dates">
                   <div class="web_screen__dates__title">Free</div>
-                  <div class="web_screen__dates__subtitle">Untill 1 sep</div>
+                  <div class="web_screen__dates__subtitle">Untill 3 sep</div>
                 </div>
               </div>
             </div><a class="web_screen__more_btn" href="#">
@@ -181,10 +181,10 @@
               </div>
               <form class="buty__form">
                 <label class="buty__label"><span class="buty__placeholder">Your name *</span>
-                  <input class="buty__input" type="text">
+                  <input class="buty__input" type="text" name="name">
                 </label>
                 <label class="buty__label"><span class="buty__placeholder">E-mail *</span>
-                  <input class="buty__input" type="text">
+                  <input class="buty__input" type="email">
                 </label>
                 <label class="buty__label buty__label__pich"><img src="images/buty_pich.png" alt="pic"><span class="buty__placeholder">Enter symbols</span>
                   <input class="buty__input" type="text">
@@ -207,7 +207,7 @@
       <footer class="small_footer small_footer2">
         <div class="small_footer__top">
           <div class="container">
-            <div class="small_footer__title">If you have any questions please contact us</div><a class="small_footer__link" href="#">request@b2broker.net</a>
+            <div class="small_footer__title">If you have any questions please contact us</div><a class="small_footer__link" href="mailto:request@b2broker.net">request@b2broker.net</a>
             <div class="social_block"><a class="youtube" href="#"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="10" cy="10" r="10" fill="white"/>
 <path d="M14.794 7.44519C14.6787 7.0168 14.3409 6.67912 13.9126 6.56377C13.1301 6.34961 9.9999 6.34961 9.9999 6.34961C9.9999 6.34961 6.8698 6.34961 6.08726 6.5556C5.66719 6.67088 5.3212 7.01687 5.20592 7.44519C5 8.22765 5 9.85042 5 9.85042C5 9.85042 5 11.4813 5.20592 12.2557C5.32127 12.684 5.65895 13.0217 6.08734 13.1371C6.87804 13.3512 9.99998 13.3512 9.99998 13.3512C9.99998 13.3512 13.1301 13.3512 13.9126 13.1452C14.341 13.03 14.6787 12.6922 14.794 12.2639C15 11.4813 15 9.85866 15 9.85866C15 9.85866 15.0082 8.22765 14.794 7.44519Z" fill="#FF0000"/>
@@ -255,10 +255,10 @@
         <div class="small_footer__center">
           <div class="big_container"><img class="small_header__logo" src="images/small_logo_footer.svg" alt="logo">
             <ul class="small_header__menu">
-              <li class="small_header__item"><a href="#">About our webinars</a></li>
-              <li class="small_header__item"><a href="#">Agenda</a></li>
-              <li class="small_header__item"><a href="#">Speaker</a></li>
-              <li class="small_header__item"><a class="new_green_bord_btn" href="#" style="min-width:198px;">Request a callback</a></li>
+              <li class="small_header__item"><a class="ahor_btn--js" href=".about_web__section">About our webinars</a></li>
+              <li class="small_header__item"><a class="ahor_btn--js" href=".web_topics__section">Agenda</a></li>
+              <li class="small_header__item"><a class="ahor_btn--js" href=".host__section">Speaker</a></li>
+              <li class="small_header__item"><a class="new_green_bord_btn web_form_btn2--js" href="#" style="min-width:198px;">Request a callback</a></li>
             </ul>
           </div>
         </div>
@@ -283,10 +283,41 @@
             </div>
             <form class="buty__form">
               <label class="buty__label"><span class="buty__placeholder">Your name *</span>
-                <input class="buty__input" type="text">
+                <input class="buty__input" type="text" name="name">
               </label>
               <label class="buty__label"><span class="buty__placeholder">E-mail *</span>
+                <input class="buty__input" type="email">
+              </label>
+              <label class="buty__label buty__label__pich"><img src="images/buty_pich.png" alt="pic"><span class="buty__placeholder">Enter symbols</span>
                 <input class="buty__input" type="text">
+              </label>
+              <label class="buty__label buty__label__phone"><img src="images/buty_lang.png" alt="lang">
+                <select>
+                  <option value="+7">+7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                </select>
+                <input class="buty__input" type="text" name="phone">
+              </label>
+              <p class="buty__police">B2Broker uses the information you provide to us to contact you about our relevant content, products and services. For more information, check out our <a href="#">Privacy Policy.</a></p>
+              <button class="buty__btn">Request a callback</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal-fancy modal_web_form modal_web_form2" id="modal_web_form2" style="display:none">
+        <div class="section small__title extra_form soft_webinars__section">
+          <div class="big_container">
+            <div class="extra_form__text">
+              <div class="section__title">Ready to start <span class="section__title--bold">Your Exchange?</span> </div>
+              <div class="section__subtitle">Fill the form and schedule a live presentation <span class="db"></span> with our product manager</div>
+            </div>
+            <form class="buty__form">
+              <label class="buty__label"><span class="buty__placeholder">Your name *</span>
+                <input class="buty__input" type="text" name="name">
+              </label>
+              <label class="buty__label"><span class="buty__placeholder">E-mail *</span>
+                <input class="buty__input" type="email">
               </label>
               <label class="buty__label buty__label__pich"><img src="images/buty_pich.png" alt="pic"><span class="buty__placeholder">Enter symbols</span>
                 <input class="buty__input" type="text">

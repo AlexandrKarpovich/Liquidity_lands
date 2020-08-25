@@ -426,7 +426,8 @@ select:visited {
   width: 98%;
 }
 
-#modal_web_form {
+#modal_web_form,
+#modal_web_form2 {
   padding: 0;
   width: 98%;
   max-width: 1200px;
@@ -529,5 +530,55 @@ select:visited {
     text-align: center;
     color: $gray;
     margin-bottom: 70px;
+  }
+}
+
+.buty__label.error,
+.buty__label.active.error {
+  .buty__placeholder {
+    color: #ed0606;
+  }
+
+  .buty__input,
+  .buty__placeholder,
+  select {
+    border-color: #ed0606;
+  }
+
+  select {
+    color: #ed0606;
+    background-image: url(../images/red_rt.svg);
+  }
+}
+
+.crypto_software {
+  .small_header {
+    .small_header__item {
+      .new_green_bord_btn:not(:hover) {
+        border: 1px solid #0abe98;
+      }
+    }
+  }
+}
+
+.machins__section--1 {
+  padding-bottom: 45px;
+}
+.machins__section--2 {
+  padding-top: 45px;
+}
+
+.modal_web_form2 {
+  .extra_form .big_container .section__title {
+    font-size: $small-title;
+    line-height: $small-title-line;
+    margin-bottom: 30px !important;
+  }
+}
+
+.extra_form {
+  .buty__btn {
+    background: linear-gradient(90deg, #136a8a 0%, #267871 100%),
+      linear-gradient(270deg, #82909f -4.16%, #9fa9b5 100.04%);
   }
 }
