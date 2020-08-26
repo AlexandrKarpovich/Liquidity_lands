@@ -6,6 +6,10 @@
   &__section.policy__section {
     padding-top: 200px;
 
+    @include respond-to("phablet") {
+      padding-top: 300px;
+    }
+
     .section__title {
       margin-bottom: 100px;
     }
