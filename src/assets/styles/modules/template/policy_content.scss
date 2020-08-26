@@ -1,5 +1,5 @@
 .policy {
-  max-width: 789px;
+  max-width: 790px;
   width: 98%;
   margin: 0 auto;
 
@@ -46,6 +46,12 @@
 
     & + .policy__desc {
       margin-top: 25px;
+    }
+
+    @media screen and (max-width: 791px) {
+      span.db {
+        display: none;
+      }
     }
   }
 
