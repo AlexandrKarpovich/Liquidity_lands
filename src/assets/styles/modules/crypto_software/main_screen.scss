@@ -49,23 +49,19 @@
         position: absolute;
         background: center / 100% auto url(../images/crypto_soft_main.png)
           no-repeat;
-        width: 69.9vw;
+        width: 57.45vw;
         max-width: 1045px;
         height: 100%;
-        right: -300px;
+        right: -15.62vw;
         top: -30px;
         z-index: 0;
 
-        @include respond-to("desktop-wide") {
-          right: -150px;
-          top: 0;
-          max-width: none;
-          width: 100%;
+        @include respond-to("desktop") {
+          right: 0;
         }
 
         @include respond-to("tablet") {
-          right: 0;
-          opacity: 0.3;
+          display: none;
         }
       }
     }
