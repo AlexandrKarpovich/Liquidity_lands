@@ -56,6 +56,10 @@
         top: -30px;
         z-index: 0;
 
+        @media screen and (min-width: 2800px) {
+          right: -20vw;
+        }
+
         @include respond-to("desktop") {
           right: 0;
         }
@@ -63,6 +67,19 @@
         @include respond-to("tablet") {
           display: none;
         }
+      }
+    }
+  }
+}
+
+@include respond-to("tablet") {
+  .crypro_software {
+    .section__title {
+      font-size: 33px;
+      line-height: 40px;
+
+      .section__title--bold {
+        display: block;
       }
     }
   }
